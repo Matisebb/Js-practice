@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 
 let nota1, nota2, nota3;
 nota1 = parseInt(prompt("Nota 1?"));
@@ -16,4 +14,3 @@ if (promedio >=8){
 }
 
 
->>>>>>> desafio1
