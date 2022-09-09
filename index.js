@@ -1,16 +1,26 @@
-let student = prompt("Ingrese el nombre del alumno");
-let nota1, nota2, nota3;
-nota1 = parseInt(prompt("Nota 1?"));
-nota2 = parseInt(prompt("Nota 2?"));
-nota3 = parseInt(prompt("Nota 3?"));
+let form = document.getElementById("form1");
 
-let promedio = (nota1 + nota2 + nota3)/3;
-if (promedio >=8){
-    alert("La condición de " + student + " se encuentra como Promocionado con una nota de: " + promedio);
-} else if(promedio >= 4){
-    alert("La condición de " + student + " se encuentra como Regular con una nota de: " + promedio);
-} else {
-    alert("La condición de " + student + " corresponde como alumno en situación Irregular con una nota de: " + promedio);
+form.onsubmit = (e) => {
+    e.preventDefault();
+    let price = parseFloat(document.getElementById("price").value);
+    let percentage = parseFloat(document.getElementById("percentage").value);
+    var limit = 10000;
+    let result = (price*percentage/100);
+    if (result < limit){
+        bonus = result;
+        pay = price - bonus;
+    } else {
+        bonus = limit;
+        pay = price - bonus;
+    }
+
+    document.getElementById("myP").innerHTML = "Descuento: " + bonus.toFixed(2);
+    "<br>"
+    document.getElementById("pym").innerHTML = "Total a pagar: " + pay.toFixed(2);
 }
 
-document.write("El promedio de " + student + " es de: " + promedio);
+function fun(){
+    document.getElementById("form1").reset();
+    document.getElementById("myP").innerHTML = "Ingrese precio y porcentaje de descuento"
+    document.getElementById("pym").innerHTML = ""
+}
