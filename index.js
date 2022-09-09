@@ -2,21 +2,21 @@ let form = document.getElementById("form1");
 
 form.onsubmit = (e) => {
     e.preventDefault();
-    let price = parseFloat(document.getElementById("price").value);
-    let percentage = parseFloat(document.getElementById("percentage").value);
-    var limit = 10000;
-    let result = (price*percentage/100);
-    if (result < limit){
-        bonus = result;
-        pay = price - bonus;
+    let precio = parseFloat(document.getElementById("precio").value);
+    let porcentaje = parseFloat(document.getElementById("porcentaje").value);
+    var limite = 10000;
+    let result = (precio*porcentaje/100);
+    if (result < limite){
+        bonificacion = result;
+        pagar = porcentaje - bonificacion;
     } else {
-        bonus = limit;
-        pay = price - bonus;
+        bonificacion = limite;
+        pagar = precio - bonificacion;
     }
 
-    document.getElementById("myP").innerHTML = "Descuento: " + bonus.toFixed(2);
+    document.getElementById("myP").innerHTML = "Descuento: " + bonificacion.toFixed(2);
     "<br>"
-    document.getElementById("pym").innerHTML = "Total a pagar: " + pay.toFixed(2);
+    document.getElementById("pym").innerHTML = "Total a pagar: " + pagar.toFixed(2);
 }
 
 function fun(){
