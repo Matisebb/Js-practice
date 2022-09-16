@@ -7,9 +7,38 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>
-    Promedio alumno
-    </h1>
+<section class="sectionForm  wow animate__fadeInUp mt-4">
+    <div class="sectionForm">
+        <h3 class="textBold textLeft sectionForm text-center titulo">
+        Por favor complete el siguiente formulario o escríbanos un mail a <span>consultoragyt@gmail.com
+    </p></span> y le responderemos a la brevedad.
+        </h3>
+        <p class="textRegular">
+        Direccion: 3 de Febrero 1977 (3300) Posadas, Misiones.
+        </p>
+        <p class="textRegular">Horario: Lunes a Viernes 8am - 12am / 16pm - 20pm</p>
+        <p class="textRegular">Telefono: 3786-547858</p>     
+    </div>
+    <div class="contact-wrapper contactForm">
+    <form action="consulta.php" class="textRegular colorForm"  id="form">
+        <h4 class=" logo">Formulario de <span>Consulta</span></h4>
+        <label for="nombre y apellido">Nombre y Apellido:</label>
+        <input type="text" id="nombreYApellido" placeholder="Nombre y Apellido">
+        <label for="numero de telefono">Número de Telefono:</label>
+        <input type="tel" id="numeroDeTelefono" placeholder="(Código de área) Número">
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="hola@consulta.com" >
+
+    <label>Consulta</label> 
+    <textarea name="message" rows="3" id="consulta"></textarea>
+
+    <button class="masInfo">
+        enviar
+        </button>
+
+        </form> 
+    </div>
+    </section>
     <script src="index.js"></script>
 </body>
 </html>
