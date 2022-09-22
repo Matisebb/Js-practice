@@ -1,44 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>SANTA PIZZAS</title>
 </head>
 <body>
-<section class="sectionForm  wow animate__fadeInUp mt-4">
-    <div class="sectionForm">
-        <h3 class="textBold textLeft sectionForm text-center titulo">
-        Por favor complete el siguiente formulario o escríbanos un mail a <span>consultoragyt@gmail.com
-    </p></span> y le responderemos a la brevedad.
-        </h3>
-        <p class="textRegular">
-        Direccion: 3 de Febrero 1977 (3300) Posadas, Misiones.
+  <div class="nav-container">
+    <nav class="navbar">
+      <h1 class="navbar-logo">SANTA<span> PIZZAS</span></h1>
+      <h2 class="show-carrito" id="showCarrito">🛒</h2>
+    </nav>
+   </div> 
+
+    <div class="banner">
+      <div class="banner-container">
+        <h1>
+          SANTA PIZZAS - TIENDA ONLINE
+        </h1>
+        <p>
+          BUENA PIZZA, SIEMPRE
         </p>
-        <p class="textRegular">Horario: Lunes a Viernes 8am - 12am / 16pm - 20pm</p>
-        <p class="textRegular">Telefono: 3786-547858</p>     
+      </div>
     </div>
-    <div class="contact-wrapper contactForm">
-    <form action="consulta.php" class="textRegular colorForm"  id="form">
-        <h4 class=" logo">Formulario de <span>Consulta</span></h4>
-        <label for="nombre y apellido">Nombre y Apellido:</label>
-        <input type="text" id="nombreYApellido" placeholder="Nombre y Apellido">
-        <label for="numero de telefono">Número de Telefono:</label>
-        <input type="tel" id="numeroDeTelefono" placeholder="(Código de área) Número">
-        <label for="email">Email:</label>
-        <input type="email" id="email" placeholder="hola@consulta.com" >
 
-    <label>Consulta</label> 
-    <textarea name="message" rows="3" id="consulta"></textarea>
+  <div id="shopContent" class="shop-content"></div>
 
-    <button class="masInfo">
-        enviar
-        </button>
-
-        </form> 
-    </div>
-    </section>
-    <script src="index.js"></script>
+  <div id="modal-container" class="modal-container"></div>
+  
+  <script src="index.js"></script>
 </body>
 </html>
