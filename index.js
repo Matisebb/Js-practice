@@ -25,5 +25,5 @@ formulario.addEventListener("submit", function(e){
     let phone = document.getElementById("numeroDeTelefono").value;
     let mail = document.getElementById("email").value;
     let consul = document.getElementById("consulta").value;
-    console.log('',nombre,'\n',mail,'\n',mail,'\n' ,consul);
+    console.log('',nombre,'\n',phone,'\n',mail,'\n' ,consul);
 })
