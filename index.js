@@ -60,6 +60,8 @@ productos.forEach((product) => {
 });
 
 showCarrito.addEventListener("click", () => {
+    modalContainer.innerHTML = "";
+    modalContainer.style.display = "flex"
     const modalHeader = document.createElement("div");
     modalHeader.className = "modal-header"
     modalHeader.innerHTML = `
@@ -71,6 +73,10 @@ showCarrito.addEventListener("click", () => {
     modalbutton.innerText = "x";
     modalbutton.className = "modal-header-button";
 
+    modalbutton.addEventListener("click", () => {
+        modalContainer.style.display = "none";
+    })
+
     modalHeader.append(modalbutton);
 
 
@@ -78,10 +84,18 @@ showCarrito.addEventListener("click", () => {
         let carritoContent = document.createElement("div")
         carritoContent.className = "modal-content"
         carritoContent.innerHTML = `
-            <img src"${product.img}">
+            <img src="${product.img}">
             <h3>${product.nombre}</h3>
             <p>${product.precio} $</p>
         `;
         modalContainer.append(carritoContent)
-    })
-})
+    });
+
+    const total = carrito.reduce((acc, el) => acc + el.precio, 0);
+
+    const totalComprado = document.createElement("div")
+    totalComprado.className = "total-content"
+    totalComprado.innerHTML = `Total a pagar: ${total} $`;
+    modalContainer.append(totalComprado); 
+
+});
