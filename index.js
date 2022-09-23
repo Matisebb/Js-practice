@@ -59,6 +59,8 @@ productos.forEach((product) => {
     })
 });
 
+
+
 showCarrito.addEventListener("click", () => {
     modalContainer.innerHTML = "";
     modalContainer.style.display = "flex"
@@ -97,5 +99,5 @@ showCarrito.addEventListener("click", () => {
     totalComprado.className = "total-content"
     totalComprado.innerHTML = `Total a pagar: ${total} $`;
     modalContainer.append(totalComprado); 
-
 });
+
