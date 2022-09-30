@@ -60,8 +60,6 @@ productos.forEach((product) => {
     })
 });
 
-
-
 showCarrito.addEventListener("click", () => {
     modalContainer.innerHTML = "";
     modalContainer.style.display = "flex"
