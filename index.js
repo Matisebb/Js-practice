@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 const shopContent = document.getElementById("shopContent");
 const showCarrito = document.getElementById("showCarrito");
 const modalContainer = document.getElementById("modal-container");
@@ -100,7 +100,6 @@ showCarrito.addEventListener("click", () => {
     modalContainer.append(totalComprado); 
 });
 
-=======
 // // Promedio de alumnos en un curso de 5
 for(i = 1; i <= 5; i++){
     let student = prompt("Ingrese el nombre del alumno");
