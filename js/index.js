@@ -28,7 +28,22 @@ productos.forEach((product) => {
     content.append(comprar);
     
     comprar.addEventListener("click", () => {
-        
+        Toastify({
+            text: "Su producto ha sido agregado al carrito con exito!",
+            duration: 1700,
+            position: "center",
+            gravity: "top",
+            style: {
+                background: "#ff4a11"
+            }
+        }).showToast();
+
+        // swal.fire({
+        //     title: "Hola",
+        //     text: "Su compra ha sido realizada con éxito!",
+        //     icon: "success",
+        //     confirmButtonText: "Seguir comprando",
+        // });
         const repeat = carrito.some((repeatProduct) => repeatProduct.id === product.id);
 
         if(repeat){
