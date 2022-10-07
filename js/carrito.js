@@ -1,4 +1,5 @@
-    const pintarCarrito = () => {
+
+const pintarCarrito = () => {
 
     modalContainer.innerHTML = "";
     modalContainer.style.display = "flex"

@@ -1,3 +1,4 @@
+
 const shopContent = document.getElementById("shopContent");
 const verCarrito = document.getElementById("verCarrito");
 const modalContainer = document.getElementById("modal-container");
@@ -22,9 +23,12 @@ productos.forEach((product) => {
     comprar.innerText = "Comprar";
     comprar.className = "comprar";
 
-    content.append(comprar);
 
+
+    content.append(comprar);
+    
     comprar.addEventListener("click", () => {
+        
         const repeat = carrito.some((repeatProduct) => repeatProduct.id === product.id);
 
         if(repeat){
@@ -46,6 +50,3 @@ productos.forEach((product) => {
         carritoCounter();
     });
 });
-
-
-
