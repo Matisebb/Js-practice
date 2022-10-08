@@ -101,3 +101,42 @@ showCarrito.addEventListener("click", () => {
     modalContainer.append(totalComprado); 
 });
 
+// FORMULARIO
+const btn = document.getElementById('button');
+
+document.getElementById('form')
+ .addEventListener('submit', function(event) {
+   event.preventDefault();
+
+   btn.value = 'Sending...';
+
+   const serviceID = 'default_service';
+   const templateID = 'template_9gugrcg';
+
+   emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+        
+      btn.value = 'Send Email';
+      btn.addEventListener("click", () => {
+        Toastify({
+            text: "Mensaje enviado",
+            duration: 2000,
+            gravity: "top",
+            position: "center",
+        })
+    })
+    }, (err) => {
+      btn.value = 'Send Email';
+      alert(JSON.stringify(err));
+    });
+});
+
+btn.addEventListener('click', () => {
+   
+    Toastify({
+        text: "Probando toast!",
+        duration: 3000,
+        gravity: 'bottom',
+        position: 'left'
+    }).showToast();
+})
