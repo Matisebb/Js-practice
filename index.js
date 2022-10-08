@@ -115,28 +115,11 @@ document.getElementById('form')
 
    emailjs.sendForm(serviceID, templateID, this)
     .then(() => {
-        
       btn.value = 'Send Email';
-      btn.addEventListener("click", () => {
-        Toastify({
-            text: "Mensaje enviado",
-            duration: 2000,
-            gravity: "top",
-            position: "center",
-        })
-    })
+      alert('Sent!');
     }, (err) => {
       btn.value = 'Send Email';
       alert(JSON.stringify(err));
     });
 });
 
-btn.addEventListener('click', () => {
-   
-    Toastify({
-        text: "Probando toast!",
-        duration: 3000,
-        gravity: 'bottom',
-        position: 'left'
-    }).showToast();
-})
