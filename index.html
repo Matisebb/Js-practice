@@ -4,9 +4,23 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
+<<<<<<< HEAD
   <link rel="stylesheet" href="sweetalert2.min.css">
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+=======
+  <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+<script type="text/javascript">
+  emailjs.init('0F35akPA0Zynv16OA')
+</script>
+>>>>>>> desafio4
   <title>SANTA PIZZAS</title>
 </head>
 <body>
@@ -28,10 +42,57 @@
       </div>
     </div>
 
+    
+
   <div id="shopContent" class="shop-content"></div>
 
   <div id="modal-container" class="modal-container"></div>
+
+  <section  class="py-5 px-5" id="contact"> 
+      <div> 
+        <h1 class="textBold wow animate__fadeInUp py-3 px-3">
+          Contacto
+        </h1>
+        <h2 class="textBold wow animate__fadeInUp py-2 px-2">
+          Comuniquese con Nosotros
+        </h2>
+      </div>
+    </section>
   
+      <section class="sectionForm  wow animate__fadeInUp mt-4">
+        <div class="sectionForm">
+          <h3 class="textBold textLeft sectionForm text-center titulo">
+            Por favor complete el siguiente formulario o escríbanos un mail a <span>santapizzas@gmail.com
+        </p></span> y le responderemos a la brevedad acerca de los distintos servicios que ofrecemos!
+          </h3>
+          <p class="textRegular">
+            Direccion: 3 de Febrero 1977 (3300) Posadas, Misiones.
+            </p>
+            <p class="textRegular">Horario: 16pm - 01am</p>
+            <p class="textRegular">Telefono: 3786-547858</p>     
+        </div>
+      <div class="contact-wrapper contactForm">
+        <form action="consulta.php" class="textRegular colorForm" id="form">
+          <h4 class=" logo">Formulario de <span>Consulta</span></h4>
+          <label for="nombre y apellido">Nombre y Apellido:</label>
+          <input type="text" id="nombre y apellido" placeholder="Nombre y Apellido">
+          <label for="numero de telefono">Número de Telefono:</label>
+          <input type="tel" id="numero de telefono" placeholder="(Código de área) Número">
+          <label for="email">Email:</label>
+          <input type="email" id="email" placeholder="hola@consulta.com" >
+  
+        <label>Consulta</label> 
+        <textarea name="message" rows="3"></textarea>
+  
+        <button class="masInfo" type="submit" id="button">
+            enviar
+          </button>
+  
+          </form> 
+      </div>
+      </section>
+  
+<<<<<<< HEAD
   <script src="js/products.js"></script>
   <script src="js/index.js"></script>
   <script src="js/carrito.js"></script>
@@ -40,5 +101,14 @@
   <script src="sweetalert2.all.min.js"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 
+=======
+  <script src="index.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script>
+  new WOW().init();
+  </script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+>>>>>>> desafio4
 </body>
 </html>
