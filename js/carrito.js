@@ -1,4 +1,9 @@
 
+const carritoCounter = () => {
+    cantidadCarrito.style.display = "block";
+    cantidadCarrito.innerText = carrito.length;
+
+};
 const pintarCarrito = () => {
 
     modalContainer.innerHTML = "";
@@ -66,8 +71,3 @@ const eliminarProducto = () => {
     pintarCarrito();
 };
 
-const carritoCounter = () => {
-    cantidadCarrito.style.display = "block";
-    cantidadCarrito.innerText = carrito.length;
-
-};
